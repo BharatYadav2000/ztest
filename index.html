@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Current Date and Time with Seconds</title>
+  <script>
+    function updateDateTime() {
+      var now = new Date();
+      var datetimeElement = document.getElementById("datetime");
+      datetimeElement.innerHTML = now.toLocaleString();
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+  </script>
+</head>
+<body>
+  <h1>Current Date and Time with Seconds</h1>
+  <p id="datetime"></p>
+</body>
+</html>
+
